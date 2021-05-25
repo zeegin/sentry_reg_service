@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+
+  flask:
+    build: ./flask
+    container_name: flask
+    restart: always
+    env_file: 
+      - .env
+    # environment:
+    #   - SENTRY_DSN=
+    expose:
+      - 5000
+  
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "5000:5000"

@@ -1,0 +1,3 @@
+flask
+uwsgi
+sentry_sdk
