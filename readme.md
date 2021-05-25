@@ -21,7 +21,7 @@ SENTRY_DSN=https://234234234234234@server.ingest.sentry.io/2342324
 
 ![Настройки](docs/assets/dsn.png)
 
-Запутить сборку сервиса регистрации
+Запустить сборку сервиса регистрации
 
 ```bash
 docker compose build
@@ -33,6 +33,6 @@ docker compose up
 
 ![Настройки](docs/assets/settings.png)
 
-Для того, чтобы отправлять сообщения автоматически после их появления, а так же для того, чтобы последние 15 сообщений журнала регистрации попадали в `BREADCRUMBS` надо установить расширение `infobase_extension/SentryPushReports.cfe`.
+Для того, чтобы отправлять сообщения автоматически после их появления, а так же для того, чтобы последние 15 сообщений журнала регистрации попадали в `BREADCRUMBS`, надо установить расширение `infobase_extension/SentryPushReports.cfe`.
 
 ![Настройки](docs/assets/breadcrumbs.png)
