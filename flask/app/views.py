@@ -108,7 +108,7 @@ def sentry_capture_report(report, path_to_attachment):
         sentry_sdk.set_extra('CompatibilityMode', report['configInfo']['compatibilityMode'])
         sentry_sdk.set_extra('ChangeEnabled', report['configInfo']['changeEnabled'])
         sentry_sdk.set_extra('DBMS', report['serverInfo']['dbms'])
-        sentry_sdk.set_extra('SetverType', report['serverInfo']['type'])
+        sentry_sdk.set_extra('ServerType', report['serverInfo']['type'])
         sentry_sdk.set_extra('ConfigurationInterfaceLanguageCode', report['sessionInfo']['configurationInterfaceLanguageCode'])
         sentry_sdk.set_extra('PlatformInterfaceLanguageCode', report['sessionInfo']['platformInterfaceLanguageCode'])
         sentry_sdk.set_extra('LocaleCode', report['sessionInfo']['localeCode'])
