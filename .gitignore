@@ -5,3 +5,6 @@ __pycache__
 Lib
 Scripts
 pyvenv.cfg
+
+# 1C:Enterprise
+ConfigDumpInfo.xml
