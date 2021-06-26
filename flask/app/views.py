@@ -212,11 +212,14 @@ def parse_os_name(report):
 
 def parse_os_version(report):
     # 'osVersion': "Microsoft Windows 10 version 10.0  (Build 19042)"
-	# 10.0.19041
+	# > 10.0.19041
+    # 'osVersion' : "Microsoft Windows 8.1 version 6.3  (Build 9600)"
+    # > 6.3.9600
     os_version = report['clientInfo']['systemInfo']['osVersion']\
         .lower()\
         .replace('microsoft', '')\
         .replace('windows 10', '')\
+        .replace('windows 8.1', '')\
         .replace('version', '')\
         .replace('build', '.')\
         .replace('(', '')\
